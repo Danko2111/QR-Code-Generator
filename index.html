@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8" />
+    <title>QR Generator</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+  </head>
+  <body>
+    <header class="primary-header blur">
+      <!-- <img src="#" alt="logo"> -->
+      <h1 class="primary-header__title">QR Generator</h1>
+    </header>
+
+    <section class="hero-banner blur">
+      <img
+        class="hero-banner__img"
+        src="https://digitechcircle.com/wp-content/uploads/2022/02/qr-code-generator-online.jpg"
+        alt="banner"/>
+      <div class="about-us">
+        <h2 class="about-us__title">How this works</h2>
+        <p class=about-us__text>
+          Thank you for visiting our site! We've built this app to make it more
+          convient to make shortcuts to other pages! You just need to enter your
+          url in the form below and press submit! Then you will recieve a QR code
+          you can share, print etc. to give easy access to your site.
+        </p>
+    </section>
+    <section class= "main-content blur">
+			<form class="main-content__form">
+				<label class="main-content__form-label">
+					<input type="text" class="main-content__form-text" placeholder="Enter your url here" />
+				</label>
+				<button class="main-content__form-button">Submit</button>
+			</form>
+			<div class="main-content__img-container">
+			</div>
+      <section class="main-content__link">
+				<a id="share-btn">Share</a>
+				<a id="view-btn">View</a>
+			</section>
+		</section>
+        <div class="shareCard shareCard--hidden">
+          <button class="shareCard__close-btn">CLOSE</button>
+          <h2 class="shareCard__title">
+            Share your QR Code link!
+          </h2>
+          <p>Click the button below to copy the link to your clipboard</p>
+          <button class="shareCard__button"></button>
+        </div>
+    <footer class="footer blur">
+      <!-- <img src="" alt="" class=""> -->
+      <p class="footer-text">Copyright QR Generator © 2022 All Rights Reserved</p>
+    </footer>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
